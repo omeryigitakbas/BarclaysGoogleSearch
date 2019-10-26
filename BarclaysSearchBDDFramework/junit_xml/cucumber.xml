@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.154399">
+<testcase classname="Google search" name="Search for Barclays on google.com" time="0.154399">
+<failure message="java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html&#13;&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:754)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:124)&#13;&#10;&#9;at StepDefinitions.BarclaysSearchSteps.open_chrome_browser(BarclaysSearchSteps.java:17)&#13;&#10;&#9;at ✽.Given I have chrome browser opened(C:/Users/10054730/barclays/BarclaysSearchBDDFramework/src/main/java/Features/google_search.feature:7)&#13;&#10;"><![CDATA[Given I have chrome browser opened..........................................failed
+When I go to https://www.google.com/........................................skipped
+And I type Barclays into search bar.........................................undefined
+And I hit search............................................................undefined
+Then https://www.barclays.co.uk/ is first url on search results page........undefined
+
+StackTrace:
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
+	at StepDefinitions.BarclaysSearchSteps.open_chrome_browser(BarclaysSearchSteps.java:17)
+	at ✽.Given I have chrome browser opened(C:/Users/10054730/barclays/BarclaysSearchBDDFramework/src/main/java/Features/google_search.feature:7)
+]]></failure>
+</testcase>
+</testsuite>

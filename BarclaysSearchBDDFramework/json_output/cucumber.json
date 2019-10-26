@@ -1,0 +1,73 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Search for Barclays on google.com",
+        "description": "",
+        "id": "google-search;search-for-barclays-on-google.com",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 154399030,
+              "error_message": "java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:754)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:124)\r\n\tat StepDefinitions.BarclaysSearchSteps.open_chrome_browser(BarclaysSearchSteps.java:17)\r\n\tat ✽.Given I have chrome browser opened(C:/Users/10054730/barclays/BarclaysSearchBDDFramework/src/main/java/Features/google_search.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I have chrome browser opened",
+            "match": {
+              "location": "BarclaysSearchSteps.open_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I go to https://www.google.com/",
+            "match": {
+              "location": "BarclaysSearchSteps.go_to_google()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I type Barclays into search bar",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I hit search",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "https://www.barclays.co.uk/ is first url on search results page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google search",
+    "description": "As Barclays employee\r\nI want to search for Barclays keyword on google search\r\nSo That https://www.barclays.co.uk/ is the first result on results page",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "C:/Users/10054730/barclays/BarclaysSearchBDDFramework/src/main/java/Features/google_search.feature"
+  }
+]
